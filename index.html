@@ -5,14 +5,14 @@
     <title>TODO App</title>
   </head>
   <body>
-    
+
 
     <ul id="container">
       <!-- Empty ul -->
     </ul>
 
     <!-- Form with: -->
-    <form id="taskOverview">
+    <form onsubmit="taskList()" id="taskOverview">
     <!-- text field for task description -->
       <label>Task description:
         <input type="text" name="task-description" id="task">
@@ -41,7 +41,7 @@
         <option value="ultra-mega">Ultra Mega Difficult</option>
       </select>
 
-      <button type="submit" name="submit" id="trigger" onclick="taskList()">Submit!</button>
+      <input type="submit" name="submit" id="trigger">
 
     </form>
     <script type="text/javascript" src="js/script.js"></script>

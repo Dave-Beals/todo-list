@@ -45,6 +45,7 @@ for(var i = 0; i < tasks.length; i++){
   var newNode = document.createElement("li");
   newNode.innerHTML = tasks[i];
   container.appendChild(newNode);
+  event.preventDefault();
   }
 }
 
