@@ -8,19 +8,26 @@ console.log("I'm working!")
 var taskArray = []
 
 var task = [];
-var name = [];
+var person = [];
 var difficulty = [];
+var taskNames = document.forms[0];
 
 var taskInput = document.getElementById("task");
-var nameInput = document.getElementById("name");
-var difficultyInput = document.getElementById("difficulty");
+// var nameInput = document.getElementById("name");
+// var difficultyInput = document.getElementById("difficulty");
 
 var theTask = document.getElementById("container");
 
 function taskList(){
   task.push(taskInput.value);
   console.log(task[0]);
-  // name.push(nameInput.value);
+
+  for(i = 0; i<taskNames.length; i++){
+    if(taskNames[i].checked){
+      person.push(taskNames[i].value);
+      console.log(person[0]);
+    }
+  }
   // difficulty.push(difficultyInput.value);
 }
 
