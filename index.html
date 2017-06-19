@@ -19,13 +19,13 @@
       <fieldset id="name">
         <legend>Task Master</legend>
         <label>
-          <input type="radio" name="task-master" value="Dave">Dave
+          <input type="radio" name="task-master" id=taskDave value="Dave">Dave
         </label>
         <label>
-          <input type="radio" name="task-master" value="Pickles the Cat">Pickles the Cat
+          <input type="radio" name="task-master" id=taskPickles value="Pickles the Cat">Pickles the Cat
         </label>
         <label>
-          <input type="radio" name="task-master" value="Dave again">Dave again
+          <input type="radio" name="task-master" id=taskDaveAgain value="Dave again">Dave again
         </label>
       </fieldset>
     <!-- dropdown list to indicate the difficulty of the task -->
@@ -39,7 +39,7 @@
         <option value="ultra-mega">Ultra Mega Difficult</option>
       </select>
 
-      <input type="submit" name="submit" value="Submit!" id="trigger" onsubmit="tasksList()">
+      <button type="submit" name="submit" id="trigger" onclick="taskList()">Submit!</button>
 
     </form>
     <script type="text/javascript" src="js/script.js"></script>
